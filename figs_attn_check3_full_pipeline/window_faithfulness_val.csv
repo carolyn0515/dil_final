@@ -1,0 +1,2 @@
+mean_delta_targeted,mean_delta_random,mean_diff(targeted-random),perm_p,half_width,n_random,window_mode,note
+0.0016946073342114687,0.00010658085588365792,0.001588026478327811,0.0011248593925759281,1,50,set_patient_mean,"Negative delta means true-class logit dropped. If targeted causes larger drop than random, evidence of faithfulness."

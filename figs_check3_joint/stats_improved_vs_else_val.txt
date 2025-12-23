@@ -1,0 +1,36 @@
+Improved vs Else (Mann–Whitney U, Cliff's delta, bootstrap 95% CI)
+
+[mu_lvl] Attention-weighted level (P(check3=1) during critical windows)
+  n: improved=172 else=228
+  median (IQR): improved=0.216315 [0.0210361,0.872926] | else=0.440918 [0.0353566,0.965538]
+  MWU p=0.0635, Cliff's delta=-0.108
+  median diff (imp-else)=-0.224603 (95% CI -0.531709..0.0359098)
+  mean diff (imp-else)=-0.0972339 (95% CI -0.178239..-0.0144056)
+
+[mu_change] Attention-weighted change (0↔1 transitions)
+  n: improved=172 else=228
+  median (IQR): improved=0.0824553 [0.00490745,0.21462] | else=0.0569722 [0,0.156187]
+  MWU p=0.196, Cliff's delta=0.0749
+  median diff (imp-else)=0.025483 (95% CI -0.010359..0.0607962)
+  mean diff (imp-else)=0.017825 (95% CI -0.00959982..0.0451069)
+
+[mu_vol] Attention-weighted volatility (rolling std, window=vol_window)
+  n: improved=172 else=228
+  median (IQR): improved=0.0635374 [0.00587489,0.149011] | else=0.0423098 [0,0.114761]
+  MWU p=0.164, Cliff's delta=0.0806
+  median diff (imp-else)=0.0212277 (95% CI -0.0042501..0.0423917)
+  mean diff (imp-else)=0.013062 (95% CI -0.00645387..0.0321851)
+
+[entropy] Entropy of normalized joint attention
+  n: improved=172 else=228
+  median (IQR): improved=3.60087 [3.57633,3.61273] | else=3.59085 [3.56063,3.61895]
+  MWU p=0.313, Cliff's delta=0.059
+  median diff (imp-else)=0.0100114 (95% CI -0.00350888..0.0166644)
+  mean diff (imp-else)=0.00627526 (95% CI -0.00884862..0.0206759)
+
+[peak_t] Peak week t* of joint attention
+  n: improved=172 else=228
+  median (IQR): improved=34 [34,34] | else=34 [34,34]
+  MWU p=0.364, Cliff's delta=0.0465
+  median diff (imp-else)=0 (95% CI 0..0)
+  mean diff (imp-else)=0.806304 (95% CI -0.804294..2.35938)

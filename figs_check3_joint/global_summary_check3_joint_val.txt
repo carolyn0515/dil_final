@@ -1,0 +1,9 @@
+check_name: check3
+B: 400
+T: 40
+check_idx: 2
+global_peak_t: 34
+top3_weeks_by_mean_j: [34, 38, 39]
+mean_entropy: 3.5786365282743837
+mean_mu_change: 0.11458771461042659
+mean_mu_vol: 0.08407836347350311
