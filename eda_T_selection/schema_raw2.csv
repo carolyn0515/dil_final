@@ -1,0 +1,5 @@
+col,dtype,missing_rate
+menti_seq,int64,0.0
+srvy_name,object,0.0
+srvy_result,int64,0.0
+reg_date,object,0.0

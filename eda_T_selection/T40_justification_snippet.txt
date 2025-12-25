@@ -1,0 +1,4 @@
+- Weekly sequences (with complete check1..6) have max length = 40 weeks.
+- Distribution (complete checks): p95=40.0, p99=40.0, max=40.
+- Using T=40 yields final cohort size N=2000 (checks complete + PHQ/P4/Lon each with >=2 observations).
+- Using T=max(40) yields final cohort size N=2000 under the same filtering.
