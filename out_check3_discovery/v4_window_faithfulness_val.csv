@@ -1,0 +1,2 @@
+metric,mean_delta_targeted,mean_delta_random,mean_diff(targeted-random),perm_p,half_width,n_random,window_mode,note
+improved_logit_drop,0.0026521977502852677,0.0004872318873181938,0.002164965862967074,0.00012498437695288088,1,50,set_patient_mean,More negative targeted delta than random => targeted window more influential for improved-logit.

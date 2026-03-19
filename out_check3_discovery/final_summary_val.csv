@@ -1,0 +1,2 @@
+chosen_marker_feature,marker_auc,marker_auc_ci95_lo,marker_auc_ci95_hi,v4_perm_p,v4_mean_diff(targeted-random),baseline_macro_f1
+ch3a_dpeak_val,0.7610031619747042,0.7132880345635212,0.8070708546536162,0.00012498437695288088,0.002164965862967074,0.34569058227070215

@@ -1,0 +1,2 @@
+channel,mean_improved,mean_else,mean_diff,p_value_perm,cliffs_delta,n_improved,n_else
+check3,0.8870500326156616,0.8981136083602905,-0.011063575744628906,0.11244377811094453,-0.2173092615259078,172,228

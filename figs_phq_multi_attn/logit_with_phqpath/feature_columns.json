@@ -1,0 +1,46 @@
+{
+  "y0": [
+    "y0_phq"
+  ],
+  "checks": [
+    "check1_mean",
+    "check2_mean",
+    "check3_mean",
+    "check4_mean",
+    "check5_mean",
+    "check6_mean",
+    "check1_std",
+    "check2_std",
+    "check3_std",
+    "check4_std",
+    "check5_std",
+    "check6_std",
+    "check1_max",
+    "check2_max",
+    "check3_max",
+    "check4_max",
+    "check5_max",
+    "check6_max",
+    "check1_min",
+    "check2_min",
+    "check3_min",
+    "check4_min",
+    "check5_min",
+    "check6_min"
+  ],
+  "phq_path": [
+    "phq_n_obs",
+    "phq_first",
+    "phq_last",
+    "phq_delta",
+    "phq_mean",
+    "phq_std",
+    "phq_min",
+    "phq_max",
+    "phq_slope",
+    "phq_n_high",
+    "phq_frac_high",
+    "phq_last_is_high",
+    "phq_range"
+  ]
+}

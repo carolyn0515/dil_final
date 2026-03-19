@@ -45,6 +45,8 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay,
     accuracy_score,
     f1_score,
+    precision_score,
+    recall_score,
 )
 
 import matplotlib
@@ -676,9 +678,30 @@ def _eval_task(name: str,
     plt.close()
 
     acc = accuracy_score(y_true, y_pred)
-    f1  = f1_score(y_true, y_pred, average="macro")
-    print(f"[VAL] {name} Δ  acc={acc:.3f}  f1={f1:.3f}  (n={len(y_true)})")
-    return dict(acc=acc, f1=f1, n=len(y_true), cm=cm.tolist())
+    prec = precision_score(y_true, y_pred, average="macro", zero_division=0)
+    rec  = recall_score(y_true, y_pred, average="macro", zero_division=0)
+    f1   = f1_score(y_true, y_pred, average="macro")
+    prec_each = precision_score(y_true, y_pred, average=None, labels=[0,1,2], zero_division=0).tolist()
+    rec_each  = recall_score(y_true, y_pred, average=None, labels=[0,1,2], zero_division=0).tolist()
+
+    print(
+        f"[VAL] {name} Δ  "
+        f"acc={acc:.3f}  prec={prec:.3f}  rec={rec:.3f}  f1={f1:.3f}  "
+        f"(n={len(y_true)})"
+    )
+    print("precision_each:", prec_each)
+    print("recall_each:", rec_each)
+    
+    return dict(
+    acc=acc,
+    precision=prec,
+    recall=rec,
+    f1=f1,
+    precision_each=prec_each,   # [improved, same, worse]
+    recall_each=rec_each,       # [improved, same, worse]
+    n=len(y_true),
+    cm=cm.tolist(),
+)
 
 
 def train_model(
